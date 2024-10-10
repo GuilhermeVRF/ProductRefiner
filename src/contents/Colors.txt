@@ -25,7 +25,7 @@ ouro velho
 perolada
 perolado
 perola
-pérola
+p�rola
 preta
 preto
 prata
@@ -35,8 +35,9 @@ roxo
 rose
 verde
 vermelha
+vermelho
 salmão
-verde água
+verde �gua
 marsala
 marrom
 nude
@@ -51,3 +52,5 @@ transparente
 ciano
 beje
 verde militar
+Lil�s
+Salm�o

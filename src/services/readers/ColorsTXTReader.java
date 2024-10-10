@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package models.manipulators;
+package services.readers;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,31 +14,25 @@ import java.util.List;
  *
  * @author Guilherme
  */
-public class ColorsArrayManipulator {
-    private List<String> colors;
-    
-    public ColorsArrayManipulator(){
-        this.colors = new ArrayList<>();
-        this.init();
-    }
-    
-    private void init(){
+public class ColorsTXTReader implements ArchiveReader {
+    public static  List<String> txtData = new ArrayList<>();
+
+    public void read(String txtPath){
         ArrayList<String> txtLines = new ArrayList<String>();
-        String txtPath = "C:\\Users\\guilh\\Documentos\\IdeaProjects\\StockFilter\\src\\contents\\Colors.txt";
         
         try(BufferedReader txtReader = new BufferedReader(new FileReader(txtPath))){
             String line;
              while ((line = txtReader.readLine()) != null) {
-                txtLines.add(line);
+                txtLines.add(line.trim());
             }
         }catch(IOException exception){
             System.err.print("An error occurred during the file reading: "+ exception.getMessage());
         }
-        
-        this.colors = txtLines;
+
+        txtData = txtLines;
     }
 
-    public List<String> get(){
-        return this.colors;
+    public int count(){
+        return txtData.size();
     }
 }
