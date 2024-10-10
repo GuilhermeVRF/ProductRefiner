@@ -1,6 +1,6 @@
 amarela
 amarelo
-amarelo limão
+amarelo lim�o
 azul
 azul escuro
 branca
@@ -10,16 +10,16 @@ branco e dourado
 branca
 branco
 verde
-verde água
+verde �gua
 dourada
-dourada miçanga
+dourada mi�anga
 bronze
 branca/dourada
 dourada com preto
 dourado
 prateada
 prateado
-lilás
+lil�s
 laranja
 ouro velho
 perolada
@@ -36,7 +36,7 @@ rose
 verde
 vermelha
 vermelho
-salmão
+salm�o
 verde �gua
 marsala
 marrom
@@ -46,11 +46,9 @@ rosas e brancas
 rosa e branco
 dourado e branco
 preto e prata
-rosa bebê
+rosa beb�
 rose gold
 transparente
 ciano
 beje
 verde militar
-Lil�s
-Salm�o

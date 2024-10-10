@@ -3,6 +3,7 @@ package models;
 import services.readers.ColorsTXTReader;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Product {
     private String code;
@@ -41,5 +42,22 @@ public class Product {
 
     public String getName(){
         return this.name;
+    }
+
+    @Override
+    public boolean equals(Object o){
+
+        if(o instanceof Product anotherProduct){
+
+            return Objects.equals(this.name, anotherProduct.name) && this.width == anotherProduct.width
+                    && this.height == anotherProduct.height && this.length == anotherProduct.length;
+        }
+
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.name, this.width, this.length, this.height);
     }
 }
